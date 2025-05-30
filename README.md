@@ -1,1 +1,1 @@
-# KzTarkov.ChangeInventoryTabsMod
+# MenuHotKeys

@@ -1,0 +1,190 @@
+///////////////
+// Main Menu //
+///////////////
+// Quit game dialog gameobject on main menu : Horizontal layout
+Preloader UI/Preloader UI/UIContext/WindowsPlaceholder/ConfirmationWindow/Window/ButtonsPanel/
+YesButton(0)
+NoButton(1)
+
+//Main menu relevent gameobjects : Vertical layout
+CommonUI/CommonUI/MenuScreen/
+PlayButton(0)
+CharacterButton(2)
+TradeButton(3)
+HideoutButton(4)
+
+// Main menu exit button : Share Vertical layout with rest of main menu
+CommonUI/CommonUI/MenuScreen//ExitButtonGroup/
+ExitButton(2)
+
+
+/////////////////
+// Side Select //
+/////////////////
+//Scav or PMC selection screen : Vertical layout
+Menu UI/UI/MatchMaker Side Selection Screen/ScreenDefaultButtons/
+NextButton(0)
+BackButton(1)
+
+// Select SCAV on side selection screen : MUST CLICK : Vertical layout with PMC toggle 
+Menu UI/UI/MatchMaker Side Selection Screen/SavageBlocker/AnimatedToggleSpawner/
+AnimatedToggle(0)
+
+// Select PMC on side selection screen : MUST CLICK : Vertical layout with SCAV toggle 
+Menu UI/UI/MatchMaker Side Selection Screen/PMCs/AnimatedToggleSpawner/
+AnimatedToggle(0)
+
+
+////////////////
+// Map Select //
+////////////////
+// Default screen buttons : Share vertical layout with MapButton maybe
+Menu UI/UI/Matchmaker Location Selection/ScreenDefaultButtons/
+NextButton(0)
+BackButton(1)
+
+// Map button : Share vertical layout with defaultbuttons maybe
+Menu UI/UI/Matchmaker Location Selection/
+MapButton(6)
+
+// Map selection screen : Click to pick map : Need to create a logical order : Vertical layout 
+Menu UI/UI/Matchmaker Location Selection/Content/Map/Image/Paths Container/
+Location Template(Clone)(12) //Customs
+Location Template(Clone)(13) //Factory
+Location Template(Clone)(14) //Interchange
+Location Template(Clone)(15) //The Lab
+Location Template(Clone)(16) //Lighthouse
+Location Template(Clone)(17) //Reserve
+Location Template(Clone)(18) //Ground Zero
+Location Template(Clone)(19) //Shoreline
+Location Template(Clone)(20) //Streets of Tarkov
+Location Template(Clone)(21) //Terminal : Not available
+Location Template(Clone)(22) //Woods
+
+// Location time selection : toggle group : MUST CLICK : Horizontal layout
+Menu UI/UI/Matchmaker Location Selection/Conditions Panel/TimePhaseContainer/
+CurrentPhase(1)
+NextPhase(2)
+
+
+//////////////////
+// Offline Raid //
+//////////////////
+// Default screen buttons : Share vertical layout with ReadyButton maybe
+Menu UI/UI/Matchmaker Offline Raid Screen/ScreenDefaultButtons/
+NextButton(0)
+BackButton(1)
+
+// Ready button : Share vertical layout with defaultbuttons maybe
+Menu UI/UI/Matchmaker Offline Raid Screen/
+ReadyButton(4)
+
+
+///////////////
+// Insurance //
+///////////////
+// Default screen buttons : Share vertical layout with InsureButton and ReadyButton maybe
+Menu UI/UI/Matchmaker Insurance/ScreenDefaultButtons/
+NextButton(0)
+BackButton(1)
+
+// Insure and Ready Buttons : Need to have a check that there are items to insure
+// ReadyButton.DefaultUIButton.Interactable to check if its available or something like that
+// Share vertical layout with defaultbuttons maybe
+Menu UI/UI/Matchmaker Insurance/ScreenAdditionalButtons/
+InsureButton(0)
+ReadyButton(1)
+
+// Tab with Q and E tabbing
+Menu UI/UI/Matchmaker Insurance/Tab Bar/Tabs/
+Insured(0)
+ToInsure(1)
+
+// Drop down menu to select which trader to use for insurance : Should probably hotkey this to #1 potentially
+Menu UI/UI/Matchmaker Insurance/ItemsToInsurePanel/SelectRepairerPanel/Repairer/RepairerOptionsPanel
+TraderDropdown(0)
+
+// Menu of available insurers created dynamically to support multiple traders : Vertical layout
+Preloader UI/Preloader UI/Context/Context Menu Area/Open Panel/Scroll Area/
+Content(0)
+
+// Button to toggle insure all : Should probably hotkey this to #2 potentially
+Menu UI/UI/Matchmaker Insurance/ItemsToInsurePanel/SecondStepLabel/Toggle/
+InsureAllLabel(2)
+
+
+////////////////
+// Matchmaker //
+////////////////
+// Default buttons to either start match creationg(NextButton) or go back : Vertical layout
+Menu UI/UI/MatchMaker AcceptScreen/ScreenDefaultButtons/
+NextButton(0)
+BackButton(1)
+
+
+/////////////
+// Loading //
+/////////////
+// Check if BackButton is active before attempting to select
+Menu UI/UI/Matchmaker Time Has Come/Back Button Panel/
+BackButton(0)
+
+
+////////////
+// Inraid //
+////////////
+// Inraid menu : Vertical layout
+Common UI/Common UI/MenuScreen/
+DisconnectButton(1)
+HideButton(5)
+
+// Confirm leave raid menu : Vertical layout
+Common UI/Common UI/ReconnectionScreen/
+BackButton(1)
+LeaveButton(5)
+
+
+////////////////
+// Raid Ended //
+////////////////
+// Raid Ended : Vertical layout
+Session End UI/Session Result Exit Status/ButtonsPanel/
+NextButton(0)
+MainMenuButton(1)
+
+// Skip screens to return to main menu confirmation : Horizontal layout
+Preloader UI/Preloader UI/UIContext/WindowsPlaceholder/ConfirmationWindow/Window/ButtonsPanel/
+YesButton(0)
+NoButton(1)
+
+// Kills screen buttons : Vertical layout
+Session End UI/Session Result Kill List/ScreenDefaultButtons/
+NextButton(0)
+BackButton(1)
+
+// Stats screen : Vertical layout
+Session End UI/Session Result Statistics/ScreenDefaultButtons/
+NextButton(0)
+BackButton(1)
+
+// Experience gain : Vertical layout
+Session End UI/Session Result Experience Count/ScreenDefaultButtons/
+NextButton(0)
+BackButton(1)
+
+// Check if button is interactable : Share Vertical layout with defaultbuttons maybe
+Session End UI/Session Result Health Treatment/HealthTreatmentService/Content/HealthTreatmentPanel/Buttons/
+ApplyButton(0)
+
+// Default buttons : Share Vertical layout with ApplyButton maybe
+Session End UI/Session Result Health Treatment/ScreenDefaultButtons/
+NextButton(0)
+BackButton(1)
+
+// Contains dynamically created list : Toggle action : Has an image element to adjust value
+Session End UI/Session Result Health Treatment/HealthTreatmentService/Content/HealthTreatmentPanel/DamageList/Content/Scroll View/
+Content(0)
+
+// Toggle button, maybe hotkey to A?
+Session End UI/Session Result Health Treatment/HealthTreatmentService/Content/HealthTreatmentPanel/DamageList/Head/
+SelectAll(1)
